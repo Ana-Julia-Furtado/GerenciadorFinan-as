@@ -15,6 +15,7 @@ import {
   DollarSign
 } from 'lucide-react';
 import { PieChart as RechartsPieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import StocksCryptoDashboard from '@/components/StocksCryptoDashboard';
 
 const Portfolio = () => {
   const [portfolioData, setPortfolioData] = useState({
@@ -205,11 +206,12 @@ const Portfolio = () => {
         </div>
 
         <Tabs defaultValue="allocation" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-5">
             <TabsTrigger value="allocation">Alocação</TabsTrigger>
             <TabsTrigger value="performance">Performance</TabsTrigger>
             <TabsTrigger value="risk">Análise de Risco</TabsTrigger>
             <TabsTrigger value="suggestions">Sugestões</TabsTrigger>
+            <TabsTrigger value="market">Mercado</TabsTrigger>
           </TabsList>
 
           {/* Allocation Tab */}
@@ -459,6 +461,11 @@ const Portfolio = () => {
                 </Button>
               </CardContent>
             </Card>
+          </TabsContent>
+
+          {/* Market Dashboard Tab */}
+          <TabsContent value="market" className="space-y-6">
+            <StocksCryptoDashboard />
           </TabsContent>
         </Tabs>
       </div>
