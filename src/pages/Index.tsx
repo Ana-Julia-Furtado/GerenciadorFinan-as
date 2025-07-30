@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import InvestmentSimulator from '../components/InvestmentSimulator';
 import FinancialManager from '../components/FinancialManager';
+import BlockchainRanking from '../components/BlockchainRanking';
 
 const Index = () => {
   return (
@@ -31,6 +32,18 @@ const Index = () => {
               </p>
             </div>
             <FinancialManager />
+          </section>
+
+          <section id="blockchain">
+            <div className="text-center space-y-4 mb-8">
+              <h2 className="text-3xl font-bold text-foreground">
+                Ranking de Blockchains
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Acompanhe as blockchains mais utilizadas e suas métricas em tempo real
+              </p>
+            </div>
+            <BlockchainRanking />
           </section>
         </div>
       </main>
