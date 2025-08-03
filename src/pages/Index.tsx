@@ -47,17 +47,6 @@ const Index = () => {
           </section>
         </div>
       </main>
-      
-      <footer className="bg-muted mt-20">
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center text-muted-foreground">
-            <p>&copy; 2024 Investia. Todos os direitos reservados.</p>
-            <p className="text-sm mt-2">
-              Plataforma educacional para gestão financeira pessoal
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
